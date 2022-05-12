@@ -1,0 +1,32 @@
+package com.ksj.Mobile_charger;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+import entity.Charger;
+import entity.Mobiles;
+
+public class App 
+{
+    public static void main( String[] args )
+    {
+      
+    	Configuration cfg = new Configuration();
+    	cfg.configure("com/ksj/Mobie_Charger/config.xml");
+    	SessionFactory factory = cfg.buildSessionFactory();
+    	Session s = factory.openSession();
+    	
+    	Charger ch1 = new Charger();
+    	Charger ch2 = new Charger();
+    	
+    	List<Charger> list1 = new ArrayList<Charger>();
+    	List<Mobiles> list2 = new ArrayList<Mobiles>();
+    	
+    	ch1.setC_id(203283);
+    	ch2.setC_Name(null)
+    }
+}

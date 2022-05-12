@@ -1,0 +1,10 @@
+package com.map;
+
+public class Question {
+	@id
+	private int q_id;
+	private String questionId;
+	private Answar answare;
+	
+
+}

@@ -1,0 +1,25 @@
+package com.ksj.one_to_one;
+
+import org.hibernate.Session;
+import org.hibernate.cfg.Configuration;
+
+import com.map.Question;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+        Configuration cfg = new Configuration();
+        cfg.configure("One-to-One.xml");
+        Session Factory = cfg.buildSessionFactory();
+        
+        Factory.close();
+        
+        Question q1 = new Question();
+        q1.setQ_id(0);
+    }
+}

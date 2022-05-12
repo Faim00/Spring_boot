@@ -1,0 +1,19 @@
+package com.ksj.Mobile_charger;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+public class App 
+{
+    public static void main( String[] args )
+    {
+      
+    	Configuration cfg = new Configuration();
+    	cfg.configure("com/ksj/Mobie_Charger/config.xml");
+    	SessionFactory factory = cfg.buildSessionFactory();
+    	Session s = factory.openSession();
+    	
+    	
+    }
+}

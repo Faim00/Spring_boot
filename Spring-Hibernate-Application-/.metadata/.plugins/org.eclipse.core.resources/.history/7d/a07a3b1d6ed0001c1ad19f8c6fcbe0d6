@@ -1,0 +1,13 @@
+package entity;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class Employees {
+
+	@Id
+	private int emp_id;
+	private String name;
+	
+}

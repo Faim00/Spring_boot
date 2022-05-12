@@ -1,0 +1,45 @@
+package com.myDemoKsj.myDemoHib;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+import entity.EmpDetail;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+        
+        Configuration cfg = new Configuration();
+        cfg.configure("com/myDemoKsj/myDemoHib/confg.cfg.xml");
+        SessionFactory factory = cfg.buildSessionFactory();
+        
+        EmpDetail emp = new EmpDetail();
+        emp.setId(101);
+        emp.setName("Ashh");
+        emp.setAge(24);
+        emp.setSall(30000);
+       System.out.println(emp);
+       
+       Session session = factory.openSession();
+       
+       // Transaction tx = session.beginTransaction();
+       // or
+       
+       session.beginTransaction();
+        session.save(emp);
+        session.getTransaction().commit();
+        
+       session.close();
+
+       
+       //       System.out.println(session);
+//       System.out.println(session.isClosed());
+               
+    }
+}

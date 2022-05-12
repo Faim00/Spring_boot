@@ -1,0 +1,51 @@
+package com.ksj.One_To_Many;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+import entity.Question;
+import entity.Answer;
+
+public class App 
+{
+    public static void main( String[] args )
+    {
+    	Configuration cfg = new Configuration();
+    	cfg.configure("com/ksj/One_To_Many");
+    	SessionFactory factory = cfg.buildSessionFactory();
+    	Session s = factory.openSession();
+    	
+    	 Question q1 = new Question();
+         q1.setQ_id(101);
+         q1.setQuestion("What is java ? ");
+         
+//         Question q2 = new Question();
+//         q2.setQ_id(102);
+//         q2.setQuestion("What is hibernate ? ");
+        
+         Answer ans = new Answer();
+         ans.setAns_id(201);
+         ans.setAnswer("Java Is a programming language");
+         ans.setQuestion(q1);
+         
+         Answer ans2 = new Answer();
+         ans2.setAns_id(202);
+         ans2.setAnswer("Hibernate is a Open Source framwork ");
+         ans2.setQuestion(q1);
+         
+         q1.setAnsware(ans);
+         ans2.setQ(q2);
+         q2.setAnsware(ans2);
+         Session s = factory.openSession();
+         s.beginTransaction();
+         s.save(q1);
+         s.save(ans);
+         s.save(q2);
+         s.save(ans2);
+         s.getTransaction().commit();
+         s.close();
+         
+    	
+    }
+}

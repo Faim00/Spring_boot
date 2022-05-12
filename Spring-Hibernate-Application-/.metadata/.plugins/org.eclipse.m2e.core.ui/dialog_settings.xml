@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="D:\Fahim\JavaSupportData\Spring Programs\Student-Object-Save"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="D:\Fahim\JavaSupportData\Spring Programs\mobile_charger_m2M"/>
+			<item value="D:\Fahim\JavaSupportData\Spring Programs\many_to_many"/>
+			<item value="D:\Fahim\JavaSupportData\Spring Programs\one_To_Many"/>
+			<item value="D:\Fahim\JavaSupportData\Spring Programs\one_to_one"/>
+			<item value="D:\Fahim\JavaSupportData\Spring Programs\Hibernate2"/>
+			<item value="D:\Fahim\JavaSupportData\Spring Programs\Student-Hibernate1"/>
+			<item value="D:\Fahim\JavaSupportData\Spring Programs\Student-Object-Save\pom.xml"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="internal"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="com.ksj.Mobile_charger"/>
+			<item value="com.ksj.Many_to_many"/>
+			<item value="com.ksj.One_To_Many"/>
+			<item value="com.ksj.one_to_one2"/>
+			<item value="com.ksj.one_to_one"/>
+			<item value="com.ksj.myDemo2"/>
+			<item value="com.myDemoKsj.myDemoHib"/>
+			<item value="com.myDemoKsj.DemoHib"/>
+		</list>
+		<list key="groupId">
+			<item value="com.ksj"/>
+			<item value="com.myDemoKsj"/>
+		</list>
+		<list key="artifactId">
+			<item value="Mobile_charger"/>
+			<item value="Many_to_many"/>
+			<item value="One_To_Many"/>
+			<item value="one-to-one2"/>
+			<item value="one-to-one"/>
+			<item value="myDemo2"/>
+			<item value="myDemoHib"/>
+			<item value="DemoHib"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.wizards.CustomArchetypeDialog">
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.preferences.RemoteArchetypeCatalogDialog">
+		<list key="catalogUrl">
+			<item value="http://repo1.maven.org/maven2/archetype-catalog.xml"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+</section>

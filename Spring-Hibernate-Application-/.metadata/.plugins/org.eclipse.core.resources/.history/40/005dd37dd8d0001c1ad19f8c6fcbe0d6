@@ -1,0 +1,72 @@
+package com.ksj.Mobile_charger;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+import entity.Charger;
+import entity.Employees;
+import entity.Mobiles;
+import entity.Project;
+
+public class App 
+{
+    public static void main( String[] args )
+    {
+      
+    	Configuration cfg = new Configuration();
+    	cfg.configure("com/ksj/Mobie_Charger/config.xml");
+    	SessionFactory factory = cfg.buildSessionFactory();
+    	Session s = factory.openSession();
+    	
+    	Mobiles m1 = new Mobiles();
+    	Mobiles m2 = new Mobiles();
+    	
+    	
+    	Charger ch1 = new Charger();
+    	Charger ch2 = new Charger();
+    	
+    	List<Charger> list1 = new ArrayList<Charger>();
+    	List<Mobiles> list2 = new ArrayList<Mobiles>();
+    	
+    	m1.setM_id(1022);
+    	m1.setM_Name("Vivo");
+    	
+         ch1.setC_id(101);
+    	 ch1.setC_Name("Redmi");
+    	
+    	 ch2.setC_id(102);
+    	 ch2.setC_Name("OnePluse");
+    	 
+    	p2.setPid(202);
+    	p2.setProjectName("Ats FrontEnd");
+    	
+    	List<Employees> list1 = new ArrayList<Employees>();
+    	List<Project>   list2 = new ArrayList<Project>();
+    	
+    	list1.add(emp);
+    	list1.add(emp2);
+    	list2.add(p1);
+    	list2.add(p2);
+    	
+    	emp.setProject(list2);
+    	p2.setEmp(list1);
+    	
+    	Transaction tx = s.beginTransaction();
+    	s.save(emp);
+    	s.save(emp2);
+    	s.save(p1);
+    	s.save(p2);
+    	
+    	tx.commit();
+    	s.close();
+    	factory.close();
+    
+    	
+    	
+    }
+}

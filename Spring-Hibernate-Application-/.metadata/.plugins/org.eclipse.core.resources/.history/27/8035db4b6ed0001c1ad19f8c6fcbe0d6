@@ -1,0 +1,20 @@
+package entity;
+
+import java.util.List;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.ManyToMany;
+
+@Entity
+public class Employees {
+
+	@Id
+	private int emp_id;
+	private String name;
+	
+	@ManyToMany
+	private List<Project> project;
+	
+	
+}

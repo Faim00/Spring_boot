@@ -1,0 +1,17 @@
+package com.ksj.one_to_one2;
+
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+public class App 
+{
+    public static void main( String[] args )
+    {
+       
+    	Configuration cfg = new Configuration();
+    	cfg.configure("com/ksj/one_to_one2/config.xml");
+    	SessionFactory factory = cfg.buildSessionFactory();
+    	
+    	
+    }
+}

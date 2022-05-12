@@ -1,0 +1,40 @@
+package com.ksj.one_to_one;
+
+import javax.transaction.Transaction;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+import com.map.Answar;
+import com.map.Question;
+
+
+public class App 
+{
+    public static void main( String[] args )
+    {
+        Configuration cfg = new Configuration();
+        cfg.configure("com/ksj/one_to_one/One-to-One.xml");
+        SessionFactory factory = cfg.buildSessionFactory();
+        
+        Question q1 = new Question();
+        q1.setQ_id(101);
+        q1.setQuestion("What is java ? ");
+        
+        Answar ans = new Answar();
+        ans.setAnware_id(301);
+        ans.setAnswer("Java Is a programming language");
+        
+        q1.setAnsware(ans);
+        Session s = factory.openSession();
+        s.beginTransaction();
+        s.save(q1);
+        s.getTransaction().commit();
+        s.close();
+        
+        
+
+        
+    }
+}

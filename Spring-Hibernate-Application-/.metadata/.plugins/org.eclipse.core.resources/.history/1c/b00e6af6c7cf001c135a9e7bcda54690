@@ -1,0 +1,43 @@
+package com.map;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class Question {
+	@Id
+	private int q_id;
+	private String questionId;
+	private Answar answare;
+	
+	public Question() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public Question(int q_id, String questionId, Answar answare) {
+		super();
+		this.q_id = q_id;
+		this.questionId = questionId;
+		this.answare = answare;
+	}
+	public int getQ_id() {
+		return q_id;
+	}
+	public void setQ_id(int q_id) {
+		this.q_id = q_id;
+	}
+	public String getQuestionId() {
+		return questionId;
+	}
+	public void setQuestionId(String questionId) {
+		this.questionId = questionId;
+	}
+	public Answar getAnsware() {
+		return answare;
+	}
+	public void setAnsware(Answar answare) {
+		this.answare = answare;
+	}
+	
+
+}

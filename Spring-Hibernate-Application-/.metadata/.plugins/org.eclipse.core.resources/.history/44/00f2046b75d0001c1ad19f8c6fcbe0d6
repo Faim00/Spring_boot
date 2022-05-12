@@ -1,0 +1,36 @@
+package com.ksj.Mobile_charger;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+import entity.Charger;
+import entity.Mobiles;
+
+public class App 
+{
+    public static void main( String[] args )
+    {
+      
+    	Configuration cfg = new Configuration();
+    	cfg.configure("com/ksj/Mobie_Charger/config.xml");
+    	SessionFactory factory = cfg.buildSessionFactory();
+    	Session s = factory.openSession();
+    	
+    	Mobiles m1 = new Mobiles();
+    	Mobiles m2 = new Mobiles();
+    	
+    	
+    	Charger vivoch = new Charger();
+    	Charger OnePluse = new Charger();
+    	
+    	List<Charger> list1 = new ArrayList<Charger>();
+    	List<Mobiles> list2 = new ArrayList<Mobiles>();
+    	
+    	m1.setM_id(1022);
+    	m1.setM_Name("Vivo");
+    }
+}

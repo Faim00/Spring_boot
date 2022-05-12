@@ -1,0 +1,11 @@
+package com.map;
+
+public class Question {
+	@id
+	@Colum(name = "question_id")
+	private int q_id;
+	private String questionId;
+	private Answar answare;
+	
+
+}

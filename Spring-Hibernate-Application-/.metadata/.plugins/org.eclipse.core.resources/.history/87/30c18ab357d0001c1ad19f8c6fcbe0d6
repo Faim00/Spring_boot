@@ -1,0 +1,15 @@
+package entity;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class Question {
+
+	@Id
+	private int q_id;
+	private String Question;
+	private Answer answer;
+	
+	
+}
